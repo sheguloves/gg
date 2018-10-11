@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GG</title>
+</head>
+<body>
+    <div>test</div>
+    <button onclick="onRequest()">Request</button>
+</body>
+<script type="text/javascript" src="node_modules/axios/dist/axios.js"></script>
+<script type="text/javascript">
+    function onRequest() {
+        axios.get('/init').then(function(response) {
+            console.log(response)
+        }).catch(function(err) {
+            console.log(err)
+        })
+    }
+</script>
+
+</html>
